@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+td:last-child, td:nth-last-child(2), td:nth-last-child(3) {
+    text-align: right;
+}
+table th:nth-last-child(-n+3) {
+    text-align: right;
+}
+h2{
+    border-bottom: 1px solid black;
+}

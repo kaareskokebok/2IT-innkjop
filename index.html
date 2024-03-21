@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2IT innkjøp</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>2IT: Innkjøpsplan og dokumentasjon</h1>
+        <h2>Innhold</h2>
+        <ul>
+            <li><a href="#innkjop">Innkjøpsliste</a></li>
+            <li><a href="#kjerne">Begrunnelser ut ifra kjerneelementer</a></li>
+            <li><a href="#drift">Begrunnelser ut ifra kompetansemål i Drift</a></li>
+            <li><a href="#bruker">Begrunnelser ut ifra kompetansemål i Brukerstøtte</a></li>
+            <li><a href="#utvikling">Begrunnelser ut ifra kompetansemål i Utvikling</a></li>
+        </ul>
+
+        <h2 id="innkjop">IT-avdelingens innkjøpsliste</h2>
+        <table>
+            <tr>
+                <th>Navn</th>
+                <th>Spesifikasjon</th>
+                <th>Lenke</th>
+                <th>Enhetspris</th>
+                <th>Antall</th>
+                <th>Totalpris</th>
+            </tr>
+            <!-- <tr>
+        <td>Mus</td>
+        <td>Kablet mus GR650</td>
+        <td><a target="_blank" href="https://www.dustin.no/product/5011212733/kablet-mus-gr650">Produktlenke</a></td>
+        <td>99</td>
+        <td>1</td>
+        <td>99</td>
+    </tr> -->
+            <tr>
+                <th
+                    colspan="6"
+                    style="text-align: center; background-color: lightyellow"
+                >
+                    Forbruk
+                </th>
+            </tr>
+            <tr>
+                <td>Logitec kablet mus</td>
+                <td>Gaming G203 Lightsync</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011181961/gaming-g203-lightsync"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>369</td>
+                <td>10</td>
+                <td>369</td>
+            </tr>
+            <tr>
+                <td>Tastatur og mus sett kablet</td>
+                <td>Desktop MK120</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5010465428/desktop-mk120"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>279</td>
+                <td>16</td>
+                <td>279</td>
+            </tr>
+            <tr>
+                <td>Ergonomisk tastatur</td>
+                <td>Cherry KC 4500 ERGO</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011221069/cherry-kc-4500-ergo?ssel=false&gad_source=1&gclid=EAIaIQobChMItdLp4tz1hAMVVQgGAB3v3Qw2EAQYASABEgK5pfD_BwE"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>349</td>
+                <td>4</td>
+                <td>349</td>
+            </tr>
+            <tr>
+                <td>Musematte stor</td>
+                <td>Voxicon Large musematte</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011171836/large"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>99</td>
+                <td>20</td>
+                <td>349</td>
+            </tr>
+            <tr>
+                <td>PC-er</td>
+                <td>Årlig kjøp 2IT</td>
+                <td>...</td>
+                <td>16000</td>
+                <td>15</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ekstra PC-er</td>
+                <td>Til Vg1</td>
+                <td>...</td>
+                <td>16000</td>
+                <td>2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: right; font-weight: bold">
+                    Sum forbruk
+                </td>
+                <td style="font-weight: bold" id="sumForbruk"></td>
+            </tr>
+            <tr>
+                <th
+                    colspan="6"
+                    style="text-align: center; background-color: lightyellow"
+                >
+                    Investering
+                </th>
+            </tr>
+            <tr>
+                <td>Aksesspunkter PoE</td>
+                <td>Nebula NWA50AX WiFi 6 - 3 pakning</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011257193/nebula-nwa50ax-wifi-6-aksesspunkt-3-pakning?tab=specification&scrollToTab=true"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>1895</td>
+                <td>1</td>
+                <td class="invest">1895</td>
+            </tr>
+            <tr>
+                <td>Webcam</td>
+                <td>Full HD</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011212735/full-hd"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>349</td>
+                <td>9</td>
+                <td class="invest">349</td>
+            </tr>
+            <tr>
+                <td>Overvåkningskam.</td>
+                <td>
+                    Reolink: RLC-820A overvåkningskamera
+                    person-/kjøretøydeteksjon
+                </td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011212638/rlc-820a-overvakningskamera-person-kjoretoydeteksjon"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>952</td>
+                <td>9</td>
+                <td class="invest"></td>
+            </tr>
+            <tr>
+                <td>Minnebrikke</td>
+                <td>FURY Beast 32GB 5200MHz CL40 DDR5 SDRAM DIMM 288-pin</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011314295/fury-beast"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>1199</td>
+                <td>1</td>
+                <td class="invest">1199</td>
+            </tr>
+
+            <tr>
+                <td>Ruter</td>
+                <td>2100 Max pfSense Security Gateway</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011268693/2100-max-pfsense-security-gateway?tab=specification&scrollToTab=true"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>4795</td>
+                <td>6</td>
+                <td class="invest">4795</td>
+            </tr>
+            <tr>
+                <td>Switch</td>
+                <td>8 port unifi poe</td>
+                <td>
+                    <a
+                        href="https://www.dustin.no/product/5011195803/unifi-switch-lite-8-poe-hvit"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>1199</td>
+                <td>6</td>
+                <td class="invest"></td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: right; font-weight: bold">
+                    Sum investering
+                </td>
+                <td style="font-weight: bold" id="sumInvestering"></td>
+            </tr>
+            <tr>
+                <th
+                    colspan="6"
+                    style="text-align: center; background-color: lightyellow"
+                >
+                    Server
+                </th>
+            </tr>
+            <tr>
+                <td>Harddisker</td>
+                <td>HP Read Intensive</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011147333"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>1795</td>
+                <td>16</td>
+                <td class="server"></td>
+            </tr>
+
+            <tr>
+                <td>Prosessor</td>
+                <td>Intel xeon silver 4210r</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011255746/intel-xeon-silver-4210r"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>8995</td>
+                <td>2</td>
+                <td class="server"></td>
+            </tr>
+            <tr>
+                <td>Server HP</td>
+                <td>Proliant DL380 Gen10</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011372403/proliant-dl380-gen10-2x240gb-extra-psu-extra-ram"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>27995</td>
+                <td>2</td>
+                <td class="server"></td>
+            </tr>
+            <tr>
+                <td>Minnebrikke heftig</td>
+                <td>SmartMemory DDR4 SDRAM 64GB 2933MHz ECC</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011154975"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>4095</td>
+                <td>4</td>
+                <td class="server"></td>
+            </tr>
+            <tr></tr>
+
+            <tr>
+                <td>Minnebrikke</td>
+                <td>HPE SmartMemory 32GB</td>
+                <td>
+                    <a
+                        target="_blank"
+                        href="https://www.dustin.no/product/5011154975"
+                        >Produktlenke</a
+                    >
+                </td>
+                <td>2095</td>
+                <td>4</td>
+                <td class="server"></td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: right; font-weight: bold">
+                    Sum server
+                </td>
+                <td style="font-weight: bold" id="sumServer"></td>
+            </tr>
+            <tr>
+                <th
+                    colspan="6"
+                    style="text-align: center; background-color: lightyellow"
+                >
+                    
+                </th>
+            </tr>
+        </table>
+
+        <h2 id="kjerne">Begrunnelser ut ifra kjerneelementer i læreplanen til 2IT</h2>
+ 
+<h3> Etikk, lovverk og yrkesutøvelse</h3>
+Innkjøp av IT-utstyr som <strong>PC-er</strong> og <strong>servere</strong> muliggjør undervisning i hvordan teknologi kan brukes ansvarlig og i overensstemmelse med lover og regelverk, som GDPR. Videre tillater dette utstyret elever å praktisere sikker datahåndtering og -lagring, noe som er kritisk i alle yrker som involverer IT.
+
+<h3>IT-støtte og kommunikasjon</h3>
+Kjøp av <strong>webkameraer</strong> og kommunikasjonsverktøy bidrar til forbedring av brukerstøtte og kommunikasjon ved å tillate interaktiv læring og fjernhjelp. Dette styrker evnen til å veilede brukere digitalt og bidrar til bedre samarbeid mellom elever og lærere, samt med eksterne partnere. Disse verktøyene er også essensielle for å lage og dele dokumentasjon og instruksjoner på en effektiv måte.
+
+<h3>Løsningsarkitektur og systemutvikling</h3>
+Innkjøp av <strong>serverutstyr</strong> og <strong>aksesspunkter</strong> for WiFi legger grunnlaget for å lære om og utvikle løsningsarkitekturer. Dette utstyret gir praktisk erfaring med infrastruktur og datakommunikasjon, som er fundamentalt for å forstå og utvikle robuste IT-løsninger. Det tillater også utforsking av ulike krav som IT-løsninger stiller til infrastruktur.
+
+<h3>Informasjonssikkerhet</h3> 
+Innkjøp av servere med sikkerhetsfunksjoner, <strong>rutere</strong>, <strong>brannmurer</strong> og <strong>harddisker</strong> som <strong>HP Read Intensive</strong>, støtter direkte undervisningen i informasjonssikkerhet. Disse verktøyene gjør det mulig for elever å lære om og implementere sikkerhetstiltak, forstå trusler og hvordan beskytte mot dem. Praktisk anvendelse av sikkerhetsteknologier hjelper elever å internalisere hvorfor og hvordan sikkerhet må integreres i alle løsninger.
+
+<h2 id="drift">Begrunnelser ut ifra kompetansemålene i Drift</h2>
+
+<h3>1. Aksesspunkter PoE og switch</h3>
+    <ul>
+        <li><strong>Kompetansemål:</strong> Planlegge, implementere og drifte fysiske og virtuelle løsninger med segmenterte nettverk.</li>
+        <li><strong>Begrunnelse:</strong> Aksesspunktene og switchene støtter opprettelsen av et segmentert nettverk ved å tillate flere VLANs og dermed bidrar til forbedret nettverkssikkerhet og effektivitet. Dette støtter også kompetansemålet om å utforske og beskrive relevante nettverksprotokoller, nettverkstjenester og serverroller.</li>
+    </ul>
+
+    <h3>2. Webcam og overvåkningskamera</h3>
+    <ul>
+        <li><strong>Kompetansemål:</strong> Utforske trusler mot datasikkerhet og gjennomføre risikoanalyse av nettverk og tjenester i en virksomhets systemer.</li>
+        <li><strong>Begrunnelse:</strong> Disse enhetene kan brukes til å overvåke fysisk sikkerhet og sikre eiendom, samt bidra til å identifisere sikkerhetstrusler i sanntid. De kan også støtte utdanningsinitiativer om hvordan slike enheter kan brukes ansvarlig, i tråd med personvernhensyn.</li>
+    </ul>
+
+    <h3>3. Server, harddisker, og minnebrikker</h3>
+    <ul>
+        <li><strong>Kompetansemål:</strong> Planlegge, drifte og implementere IT-løsninger som ivaretar informasjonssikkerhet og gjeldende regelverk for personvern.</li>
+        <li><strong>Begrunnelse:</strong> Serveren og dens komponenter støtter drift av både fysiske og virtuelle løsninger, noe som er kritisk for implementering av sikre IT-systemer. Utvidelse av lagringskapasitet og minne støtter komplekse datasikkerhetsapplikasjoner og databehandling som kreves for moderne datasikkerhetsstandarder.</li>
+    </ul>
+
+    <h2 id="bruker">Begrunnelser ut ifra kompetansemålene i Brukerstøtte</h2>
+
+<h3>Server HP Proliant DL380 Gen10</h3>
+<ul>
+    <li><strong>Kompetansemål:</strong> Kartlegge behovet for og utvikle veiledninger for brukere og kunder.</li>
+    <li><strong>Begrunnelse:</strong> HP Proliant DL380 Gen10 serveren tilbyr en robust plattform for hosting av applikasjoner og tjenester som er kritiske for læringsmiljøet. Dette gir studentene mulighet til å utvikle detaljerte veiledninger og dokumentasjon som er nødvendig for effektiv brukerstøtte.</li>
+</ul>
+
+<h3>Harddisker HP Read Intensive</h3>
+<ul>
+    <li><strong>Kompetansemål:</strong> Feilsøke og rette feil ved hjelp av feilsøkingsstrategier og relevante rammeverk.</li>
+    <li><strong>Begrunnelse:</strong> Disse spesialiserte harddiskene gir studentene praktisk erfaring med å administrere lagringsløsninger, inkludert feilsøking og ytelsesoptimalisering, noe som styrker deres evne til å anvende systematiske feilsøkingsstrategier.</li>
+</ul>
+
+<h3>Minnebrikke SmartMemory DDR4 SDRAM 64GB 2933MHz ECC</h3>
+<ul>
+    <li><strong>Kompetansemål:</strong> Bruke og administrere samhandlingsverktøy som effektiviserer samarbeid og deling av informasjon.</li>
+    <li><strong>Begrunnelse:</strong> Høykapasitetsminne muliggjør kjøring av flere applikasjoner samtidig og håndtering av store datasett, essensielt for å støtte samhandlingsverktøy og -plattformer som krever høy ytelse for å gi en sømløs brukeropplevelse.</li>
+</ul>
+
+
+<!-- ### Generell Begrunnelse
+Disse innkjøpene støtter direkte opp under læreplanens kjerneelementer og kompetansemålene i driftsfaget ved å:
+- Tilrettelegge for praktisk læring og dybdeforståelse av IT-infrastruktur.
+- Muliggjøre implementering og drift av sikre nettverk som beskytter mot aktuelle trusler.
+- Støtte utviklingen av IT-løsninger som respekterer personvern og informasjonssikkerhet. -->
+
+<h2 id="utvikling">Begrunnelser ut ifra kompetansemålene i Utvikling</h2>
+<h3>Kvalitetsskjermer for programmering</h3>
+<ul>
+    <li><strong>Kompetansemål:</strong> Vurdere brukergrensesnitt til IT-tjenester og designe tjenester som er tilpasset brukernes behov.</li>
+    <li><strong>Begrunnelse:</strong> Kvalitetsskjermer gir elevene muligheten til å se detaljene i brukergrensesnittet de designer, noe som er avgjørende for å skape intuitive og brukervennlige løsninger. Det er også viktig at skjermene er store nok til å ha minst 3 vinduer oppe og aktive samtidig. God skjermoppløsning og fargegjengivelse er essensielt for å evaluere og forbedre brukeropplevelsen av IT-tjenester.</li>
+</ul>
+
+<h3>Servere for utvikling og testing</h3>
+<ul>
+    <li><strong>Kompetansemål:</strong> Analysere digitale trusler, verdier og sårbarheter og utvikle applikasjoner med innebygget sikkerhet. Anvende relevant testmiljø og utføre testing tilpasset IT-løsningen som utvikles.</li>
+    <li><strong>Begrunnelse:</strong> Servere dedikert til utvikling og testing tillater elever å deploye og teste applikasjoner i et kontrollert miljø. Dette er kritisk for å forstå sikkerhetsimplikasjoner og for å gjennomføre omfattende testing av IT-løsninger før de settes i produksjon.</li>
+</ul>
+
+<h3>SSD-disker for rask datalagring og tilgang</h3>
+<ul>
+    <li><strong>Kompetansemål:</strong> Modellere og opprette databaser for informasjonsflyt i systemer. Beskrive ulike datalagringsmodeller og metoder for å hente ut og sette inn bestemte data fra databaser som brukes av andre systemer.</li>
+    <li><strong>Begrunnelse:</strong> SSD-disker (Solid State Drives) tilbyr raskere datatilgang og er mer pålitelige enn tradisjonelle harddisker. Dette akselererer utviklingsprosessen ved å redusere lastetidene for databaser og applikasjoner, noe som er essensielt for effektiv utvikling og databehandling.</li>
+</ul>
+<hr>
+<h3>Oppsummert</h3> 
+<blockquote>IT-avdelingen er opptatt av å forberede elevene på fremtidige yrkesroller innen IT. En velutstyrt IT-avdeling er nødvendig for å møte de pedagogiske og yrkesmessige kravene i den moderne verden.
+    <p style="text-align:right; font-style: italic;">- Oddvar, Kjetil og Kaare</p>
+</blockquote>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
