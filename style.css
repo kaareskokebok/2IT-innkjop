@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
 }
+main{
+    padding:40px;
+}
 table {
     width: 100%;
     border-collapse: collapse;
